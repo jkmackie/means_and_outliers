@@ -17,9 +17,15 @@ The **geometric mean** is the nth root of numbers multiplied together, where n i
 The **harmonic mean** is the **arithmetic mean** but with -1 powers inserted. Each number in the numerator gets -1 power.  Also, the numerator and denominator are placed in parenthesis and raised to the -1 power.  This is the same as flipping the `numerator/denominator` to `denominator/numerator`.
 
 * `Harmonic mean of 40, 60 = ((40^-1+60^-1)/(2))^-1 = 2/(1/40 + 1/60)`
-* `Harmonic mean in words: (1) Write out arithmetic mean - (40 + 60) / 2; (2) Rewrite equation.  Denominator is the numerator.  Each number in numerator is flipped and summed in denominator.`
 
+Harmonic mean in words:
+* Write out arithmetic mean equation: (40 + 60) / 2; 
+* Rewrite equation by putting the denominator as the numerator.  
+* Each number in numerator is flipped and summed in the denominator inside parenthesis.`
 
+### How are the means  impacted by outliers?
+Let's consider a contrived case where there are four different house quality ratings.  Kitchen, Basement, and House Quality are rated on a scale of 1-5 with 5 as the best.  Overall quality is rated on a scale of 1-10 where 10 is the best.
 
+Here are histograms of the ratings:
 
 ![Alt text](images/four_ratings.PNG)
