@@ -1,5 +1,5 @@
 # means_and_outliers
-Build intuition for harmonic, geometric, and arithmetic means
+**Build intuition for harmonic, geometric, and arithmetic means.**
 ***
 
 We commonly summarize lot of numbers with one number.  This number is often an average.  But, there are different averages.  We will focus on the arithmetic mean, geometric mean, and harmonic mean.  Each has a different sensitivity to outliers. And each has use cases.
