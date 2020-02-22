@@ -14,9 +14,11 @@ The **geometric mean** is the nth root of numbers multiplied together, where n i
 
 * `Geometric mean of 3, 5, 7, 40 = (3*5*7*40)^(1/4) = 8.0503 (rounded to four decimals)`
 
-The **harmonic mean** is just the **arithmetic mean** but with each number in the numberator raised to the -1 power.  Also, the numerator and denominator are placed in parenthesis and raised to the -1 power.  This is the same as changing `numerator/denominator` to `denominator\numerator`.
+The **harmonic mean** is the **arithmetic mean** but with -1 powers inserted. Each number in the numerator gets -1 power.  Also, the numerator and denominator are placed in parenthesis and raised to the -1 power.  This is the same as flipping the `numerator/denominator` to `denominator/numerator`.
 
-`Harmonic mean of 40,60 = ((40^-1+60^-1)/(2))^-1 = (1/40 + 1/60)*2 = 
+* `Harmonic mean of 40, 60 = ((40^-1+60^-1)/(2))^-1 = 2/(1/40 + 1/60)`
+* `Harmonic mean in words: (1) Write out arithmetic mean - (40 + 60) / 2; (2) Rewrite equation.  Denominator is the numerator.  Each number in numerator is flipped and summed in denominator.`
+
 
 
 
