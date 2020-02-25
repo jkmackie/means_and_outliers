@@ -2,7 +2,7 @@
 **Build intuition for harmonic, geometric, and arithmetic means.**
 ***
 
-We commonly summarize lot of numbers with one number.  This number is often an average.  But, there are different averages.  We will focus on the arithmetic mean, geometric mean, and harmonic mean.  Each has a different sensitivity to outliers. And each has use cases.
+We commonly summarize many numbers with a single number.  The number is often an average.  But, there are different averages.  We will focus on the arithmetic mean, geometric mean, and harmonic mean.  Each has a different sensitivity to outliers. And each has use cases.
 
 The **arithmetic mean** is the "average" the general public is familiar with.  We have two numbers, 40 and 60:
 
@@ -23,16 +23,17 @@ Harmonic mean in words:
 * Rewrite equation by putting the denominator as the numerator.  
 * Each number in numerator is flipped and summed in the denominator inside parenthesis.`
 
-### How are the means  impacted by outliers?
-Let's consider a *contrived* case where there are four different house quality ratings.  Kitchen, Basement, and House Quality are rated on a scale of 1-5 with 5 as the best.  Overall quality is rated on a scale of 1-10 with 10 as the best.
+### How are the means impacted by outliers?
+Let's consider a *contrived* case where there are four different house quality ratings.  Kitchen, Basement, and House Quality are rated on a scale of 1-5 with 5 as the best.  Overall Quality is rated on a scale of 1-10 with 10 as the best.
 
 Here are histograms of the ratings:
 
 ![Alt text](images/four_ratings.PNG)
 
+We mix the 1-5 scale ratings together and view the histogram:
 
-my text
+Now, we add in the Overall Quality ratings to the mix:
 
 ![Alt text](images/four_ratings_combined.PNG)
 
-
+The histogram is right-skewed.  Recall the Overall Quality scale goes higher. It includes 6-10.
