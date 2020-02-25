@@ -24,8 +24,15 @@ Harmonic mean in words:
 * Each number in numerator is flipped and summed in the denominator inside parenthesis.`
 
 ### How are the means  impacted by outliers?
-Let's consider a contrived case where there are four different house quality ratings.  Kitchen, Basement, and House Quality are rated on a scale of 1-5 with 5 as the best.  Overall quality is rated on a scale of 1-10 where 10 is the best.
+Let's consider a *contrived* case where there are four different house quality ratings.  Kitchen, Basement, and House Quality are rated on a scale of 1-5 with 5 as the best.  Overall quality is rated on a scale of 1-10 with 10 as the best.
 
 Here are histograms of the ratings:
 
 ![Alt text](images/four_ratings.PNG)
+
+
+my text
+
+![Alt text](images/four_ratings_combined.PNG)
+
+
