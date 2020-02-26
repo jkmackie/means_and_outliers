@@ -44,3 +44,70 @@ Since the scales are the same, the combined histogram also goes from 1-5.  Now, 
 The histogram is right-skewed because the Overall Quality scale includes 6-10 and the other ratings do not.  If we pretend this set is [normally distributed](https://www.mathsisfun.com/data/standard-normal-distribution.html), the tails would be balanced.  Instead, the two little bars in the right tail look like outliers.  Ratings 9 and 10 in the set are over three standard deviations above the mean rating of 4.3.
 
 ### How are the means impacted by outliers?
+
+We put Overall Quality, Kitchen Quality, Basement Quality and Heating Quality into a table.  The first two rows are shown below.
+
+The four ratings are summarized with the mean.  For example, on the first row, the arithmetic mean (rat_amean) is 6.25.  The geometric mean is 5.95 (rat_gmean).  The harmonic mean (rat_hmean) is 5.71.  Also, the median (rat_median) is 5.0.
+
+![Alt text](images/ratings_and_means.PNG)
+
+The means follow an order.  Arithmetic > Geometric > Harmonic.  This is always true, unless the data is completely uniform!
+
+### How is a linear regression impacted by using the mean?
+
+Let's predict house price by first using our original four ratings:  Overall Quality, Kitchen Quality, Basement Quality and Heating Quality.  Mean Absolute Error (MAE) scores the predictions.  (MAE is an arithmetic mean by convention.)
+
+```
+# Regression with rating columns.
+rating_cols = ['OverallQual','KitchenQual','BsmtQual','HeatingQC']
+           
+lr=LinearRegression(fit_intercept=True)
+lr.fit(X_train[rating_cols], y_train)
+y_preds = lr.predict(X_test[rating_cols])
+score_results(lr, y_test, y_preds)
+
+-----------------------------------------------
+##### LinearRegression - Ratings
+-----------------------------------------------
+R^2: 0.6929
+MAE: 29152.54
+```
+
+Now, regress on each mean column by itself.
+
+```
+# Regression with mean columns
+mean_col = ['rat_amean', 'rat_gmean', 'rat_hmean','rat_median']
+lr=LinearRegression(fit_intercept=True)
+
+for c in mean_col: 
+    lr.fit(X_train[c].values.reshape(-1,1), y_train)
+    y_predsAvg = lr.predict(X_test[c].values.reshape(-1,1))    
+    score_results(lr, y_test, y_predsAvg)
+    print('Average column:', c,'\n')
+    
+-----------------------------------------------
+##### LinearRegression - rat_amean
+-----------------------------------------------
+R^2: 0.6345
+MAE: 32350.11
+
+-----------------------------------------------
+##### LinearRegression - rat_gmean
+-----------------------------------------------
+R^2: 0.6044
+MAE: 33762.05
+
+-----------------------------------------------
+##### LinearRegression - rat_hmean
+-----------------------------------------------
+R^2: 0.5771
+MAE: 34956.29
+
+-----------------------------------------------
+##### LinearRegression - rat_median
+-----------------------------------------------
+R^2: 0.3915
+MAE: 42603.38
+```
+As expected, prediction quality worsens regardless of which statistic is used.  Another insight is the order is maintained!  The best to worst prediction order is: Arithmetic, Geometric, Harmonic, and Median.
