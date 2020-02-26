@@ -41,9 +41,9 @@ Since the scales are the same, the combined histogram also goes from 1-5.  Now, 
 
 ![Alt text](images/four_ratings_combined.PNG)
 
-The histogram is right-skewed because the Overall Quality scale includes 6-10 and the other ratings do not.  If we pretend this set is [normally distributed](https://www.mathsisfun.com/data/standard-normal-distribution.html), the tails would be balanced.  Instead, the two little bars in the right tail look like outliers.  Ratings 9 and 10 in the set are over three standard deviations above the mean rating of 4.3.
+The histogram is right-skewed because the Overall Quality scale includes 6-10 and the other ratings do not.  If we pretend this set is [normally distributed](https://www.mathsisfun.com/data/standard-normal-distribution.html), the tails would be balanced.  In this context, the two little bars in the right tail look like outliers.  Ratings 9 and 10 in the set are over three standard deviations above the mean rating of 4.3.
 
-### How are the means impacted by outliers?
+### How are the means impacted by non-uniform data?
 
 We put Overall Quality, Kitchen Quality, Basement Quality and Heating Quality into a table.  The first two rows are shown below.
 
