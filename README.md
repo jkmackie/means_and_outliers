@@ -115,5 +115,5 @@ As expected, prediction quality worsens regardless of which statistic is used.  
 The best to worst prediction order mirrors the mean order!  The order is: 
 
 * 1st: Arithmetic
-* 2nd Geometric
-* 3rd Harmonic
+* 2nd: Geometric
+* 3rd: Harmonic
