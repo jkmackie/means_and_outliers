@@ -29,6 +29,10 @@ Harmonic mean in words:
 ### Quality Ratings on Scales 1-5 and 1-10
 Consider a contrived scenario where there are four different house quality ratings.  Only these ratings will be used to predict house price.  Kitchen, Basement, and House Quality are rated on a scale of 1-5 with 5 as the best.  Overall Quality is rated on a scale of 1-10 with 10 as the best.
 
+Each of the four ratings is strongly correlated to SalePrice, especially Overall Quality:
+
+![Alt text](images/rating_corrs.PNG)
+
 Here are histograms of the ratings:
 
 ![Alt text](images/four_ratings.PNG)
