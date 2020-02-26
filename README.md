@@ -51,7 +51,7 @@ The four ratings are summarized with the mean.  For example, on the first row, t
 
 ![Alt text](images/ratings_and_means.PNG)
 
-The means follow an order.  Arithmetic > Geometric > Harmonic.  This is always true, unless the data is completely uniform!
+The means follow an order.  Arithmetic >= Geometric >= Harmonic.  This is always true, unless the data is completely uniform!
 
 ### How is a linear regression impacted by using the mean?
 
@@ -110,4 +110,10 @@ MAE: 34956.29
 R^2: 0.3915
 MAE: 42603.38
 ```
-As expected, prediction quality worsens regardless of which statistic is used.  Another insight is the order is maintained!  The best to worst prediction order is: Arithmetic, Geometric, Harmonic, and Median.
+As expected, prediction quality worsens regardless of which statistic is used.  Taking the mean of four ratings removes information.
+
+The best to worst prediction order mirrors the mean order!  The order is: 
+
+* 1st: Arithmetic
+* 2nd Geometric
+* 3rd Harmonic
