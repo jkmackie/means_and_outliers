@@ -32,8 +32,10 @@ Here are histograms of the ratings:
 
 We mix the 1-5 scale ratings together and view the histogram:
 
-Now, we add in the Overall Quality ratings to the mix:
+![Alt text](images/all_1_5_ratings_combined.PNG)
+
+Since the scales are the same, the combined histogram also goes from 1-5.  Now, we mix in the Overall Quality ratings:
 
 ![Alt text](images/four_ratings_combined.PNG)
 
-The histogram is right-skewed.  Recall the Overall Quality scale goes higher. It includes 6-10.
+The histogram is right-skewed because the Overall Quality scale includes 6-10 and the other ratings do not.
