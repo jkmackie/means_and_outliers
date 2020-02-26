@@ -2,9 +2,11 @@
 **Build intuition for harmonic, geometric, and arithmetic means.**
 ***
 
-We commonly summarize many numbers with a single number.  The number is often an average.  But, there are different averages.  We will focus on the arithmetic mean, geometric mean, and harmonic mean.  Each has a different sensitivity to outliers. And each has use cases.
+We commonly summarize many numbers with a single number.  The number is often an average.  But, different averages with different properties.  
 
-The **arithmetic mean** is the "average" the general public is familiar with.  We have two numbers, 40 and 60:
+We will discuss the arithmetic mean, geometric mean, and harmonic mean.  Each has a different sensitivity to outliers. And each has use cases.
+
+The **arithmetic mean** is the "average" everyone is familiar with.  We have two numbers, 40 and 60:
 
 `Arithmetic mean = (40 + 60) / 2 = 50`
 
@@ -38,4 +40,4 @@ Since the scales are the same, the combined histogram also goes from 1-5.  Now, 
 
 ![Alt text](images/four_ratings_combined.PNG)
 
-The histogram is right-skewed because the Overall Quality scale includes 6-10 and the other ratings do not.
+The histogram is right-skewed because the Overall Quality scale includes 6-10 and the other ratings do not.  If we pretend this set is [normally distributed](https://www.mathsisfun.com/data/standard-normal-distribution.html), the tails would be balanced.  Instead, the two little bars in the right tail look like outliers.  Ratings 9 and 10 in the set are over three standard deviations above the mean rating of 4.3.
