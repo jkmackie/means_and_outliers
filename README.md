@@ -4,7 +4,7 @@
 
 We commonly summarize many numbers with a single number.  The number is often an average.  Different averages have different properties.  
 
-We will discuss the arithmetic mean, geometric mean, and harmonic mean.  Each has a different sensitivity to outliers. And each has use cases.
+We will discuss the arithmetic mean, geometric mean, and harmonic mean.  Each behaves differently with non-uniform data. And each has use cases.
 
 The **arithmetic mean** is the "average" everyone is familiar with.  We have two numbers, 40 and 60:
 
