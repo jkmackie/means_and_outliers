@@ -2,7 +2,7 @@
 **Build intuition for harmonic, geometric, and arithmetic means.**
 ***
 
-We commonly summarize many numbers with a single number.  The number is often an average.  But, different averages with different properties.  
+We commonly summarize many numbers with a single number.  The number is often an average.  Different averages have different properties.  
 
 We will discuss the arithmetic mean, geometric mean, and harmonic mean.  Each has a different sensitivity to outliers. And each has use cases.
 
@@ -23,10 +23,11 @@ The **harmonic mean** is the **arithmetic mean** but with -1 powers inserted. Ea
 Harmonic mean in words:
 * Write out arithmetic mean equation: (40 + 60) / 2; 
 * Rewrite equation by putting the denominator as the numerator.  
-* Each number in numerator is flipped and summed in the denominator inside parenthesis.`
+* Each number in numerator is flipped and summed in the denominator inside parenthesis.
 
-### How are the means impacted by outliers?
-Let's consider a *contrived* case where there are four different house quality ratings.  Kitchen, Basement, and House Quality are rated on a scale of 1-5 with 5 as the best.  Overall Quality is rated on a scale of 1-10 with 10 as the best.
+***
+### Quality Ratings on Scales 1-5 and 1-10
+Consider a contrived scenario where there are four different house quality ratings.  Only these ratings will be used to predict house price.  Kitchen, Basement, and House Quality are rated on a scale of 1-5 with 5 as the best.  Overall Quality is rated on a scale of 1-10 with 10 as the best.
 
 Here are histograms of the ratings:
 
@@ -41,3 +42,5 @@ Since the scales are the same, the combined histogram also goes from 1-5.  Now, 
 ![Alt text](images/four_ratings_combined.PNG)
 
 The histogram is right-skewed because the Overall Quality scale includes 6-10 and the other ratings do not.  If we pretend this set is [normally distributed](https://www.mathsisfun.com/data/standard-normal-distribution.html), the tails would be balanced.  Instead, the two little bars in the right tail look like outliers.  Ratings 9 and 10 in the set are over three standard deviations above the mean rating of 4.3.
+
+### How are the means impacted by outliers?
