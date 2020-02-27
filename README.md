@@ -26,12 +26,18 @@ The geometric mean computes the correct interest rate for the Compound Interest 
 ***
 The **harmonic mean** is the **arithmetic mean** but with -1 powers inserted. Each number in the numerator gets -1 power.  Also, the numerator and denominator are placed in parenthesis and raised to the -1 power.  This is the same as flipping the `numerator/denominator` to `denominator/numerator`.
 
-* `Harmonic mean of 40, 60 = ((40^-1+60^-1)/(2))^-1 = 2/(1/40 + 1/60)`
+* `Harmonic mean of 40, 60 = ((40^-1+60^-1)/(2))^-1 = 2/(1/40 + 1/60)` = 48
 
 Harmonic mean in words:
 * Write out arithmetic mean equation: (40 + 60) / 2; 
 * Rewrite equation by putting the denominator as the numerator.  
 * Each number in numerator is flipped and summed in the denominator inside parenthesis.
+
+Harmonic mean is used for comparing [rates](https://stats.stackexchange.com/questions/23117/which-mean-to-use-and-when) like Miles Per Hour (credit: Peter Flom).  If you drive roundtrip from Houston to Midland at 40 MPH and return at 60 MPH, what is the average speed?  It is not 50 MPH because the 60 MPH leg takes fewer hours.
+
+The harmonic mean computes the answer directly, as shown in the above example.  The average speed is 48 MPH.
+
+The conventional way to calculate it is speed = roundtrip_distance / roundtrip_time = 480 / 10 = 48.
 
 ***
 ### Quality Ratings on Scales 1-5 and 1-10
