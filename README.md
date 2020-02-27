@@ -69,7 +69,9 @@ The four ratings are summarized with the mean.  For example, on the first row, t
 
 ![Alt text](images/ratings_and_means.PNG)
 
-The means follow an order:  `Equation 1: Arithmetic >= Geometric >= Harmonic`  
+The means follow an order:  
+
+`Equation 1: Arithmetic >= Geometric >= Harmonic`  
 
 **This order is always true, unless the data is completely uniform!**
 
