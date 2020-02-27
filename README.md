@@ -30,8 +30,8 @@ The **harmonic mean** is the **arithmetic mean** but with -1 powers inserted. Ea
 
 Harmonic mean in words:
 * Write out arithmetic mean equation: (40 + 60) / 2; 
-* Rewrite equation by putting the denominator as the numerator.  
-* Each number in numerator is flipped and summed in the denominator inside parenthesis.
+* Each number in the original numerator is flipped.  Move to denominator and sum within parenthesis.
+* Move the original denominator to the numerator.
 
 Harmonic mean is used for comparing [rates](https://stats.stackexchange.com/questions/23117/which-mean-to-use-and-when) like Miles Per Hour (credit: Peter Flom).  If you drive roundtrip from Houston to Midland at 40 MPH and return at 60 MPH, what is the average speed?  It is not 50 MPH because the 60 MPH leg takes fewer hours.
 
