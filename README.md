@@ -71,7 +71,7 @@ The four ratings are summarized with the mean.  For example, on the first row, t
 
 The means follow an order:  
 
-**Equation 1:** Arithmetic >= Geometric >= Harmonic
+**Equation 1:** `Arithmetic >= Geometric >= Harmonic`
 
 This order is always true, unless the data is completely uniform!
 
