@@ -37,7 +37,7 @@ Harmonic mean is used for comparing [rates](https://stats.stackexchange.com/ques
 
 The harmonic mean computes the answer directly, as shown in the above example.  The average speed is 48 MPH.
 
-The conventional way to calculate it is speed = roundtrip_distance / roundtrip_time = 480 / 10 = 48.
+The conventional way to calculate it is speed = (roundtrip_distance / roundtrip_time( = (480 / 10) = 48.
 
 ***
 ### Quality Ratings on Scales 1-5 and 1-10
@@ -71,9 +71,9 @@ The four ratings are summarized with the mean.  For example, on the first row, t
 
 The means follow an order:  
 
-`Equation 1: Arithmetic >= Geometric >= Harmonic`  
+**Equation 1:** Arithmetic >= Geometric >= Harmonic
 
-**This order is always true, unless the data is completely uniform!**
+This order is always true, unless the data is completely uniform!
 
 ### How is a linear regression impacted by using the mean?
 
